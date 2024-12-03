@@ -99,15 +99,25 @@ import "fmt"
 // }
 
 
-func add1 (integerNumOne int) int {
-	return integerNumOne 
-}
+// func add (integerNumOne, integerNumTwo int) int {
+// 	return integerNumOne + integerNumTwo
+// }
 
-func add2 (integerNumTwo int) int {
-	return integerNumTwo
-}
+// func variables() {
+// 	sum := add(5, 15)
+// 	fmt.Println(sum)
+// }
 
+
+// Write a function to find the maximum of two numbers.
+func max(num1, num2 int) int {
+	if num1 > num2 {
+		return num1
+	} else {
+		return num2
+	}
+}
 func variables() {
-	sum := add1(5) + add2(15)
-	fmt.Println(sum)
+	maxNum := max(40, 30)
+	fmt.Println(maxNum)
 }
