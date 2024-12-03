@@ -52,15 +52,38 @@ import "fmt"
 // 	}
 // }
 
-// Write a program to check if a number is positive, negative, or zero.
-func variables() {
-	num := -1
+// // Write a program to check if a number is positive, negative, or zero.
+// func variables() {
+// 	num := -1
 
-	if num > 0 {
-		fmt.Println("Number is Positive")
-	} else if num < 0 {
-		fmt.Println("Number is Negative")
-	} else {
-		fmt.Println("Number is zero")
+// 	if num > 0 {
+// 		fmt.Println("Number is Positive")
+// 	} else if num < 0 {
+// 		fmt.Println("Number is Negative")
+// 	} else {
+// 		fmt.Println("Number is zero")
+// 	}
+// }
+
+// Loops
+// func variables() {
+// 	for i := 1; i <= 15; i++ {
+// 		fmt.Println("Iteration:", i)
+// 	}
+// }
+
+// Write a program to print the first 10 even numbers.
+// func variables() {
+// 	for i := 2; i <= 10; i += 2 {
+// 		fmt.Println("Iteration:", i)
+// 	}
+// }
+
+// Write a program to print the first 10 odd numbers.
+func variables() {
+	for i := 1; i <= 10; i++ {
+		if i % 2 != 0 {
+			fmt.Println("Iteration:", i)
+		}
 	}
 }
