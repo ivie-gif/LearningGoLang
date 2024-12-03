@@ -80,10 +80,34 @@ import "fmt"
 // }
 
 // Write a program to print the first 10 odd numbers.
+// func variables() {
+// 	for i := 1; i <= 10; i++ {
+// 		if i % 2 != 0 {
+// 			fmt.Println("Iteration:", i)
+// 		}
+// 	}
+// }
+
+
+// func greet(car string) string {
+// 	return "Hello, " + car + "!"
+// }
+
+// func variables() {
+// 	message := greet("Tesla")
+// 	fmt.Println(message)
+// }
+
+
+func add1 (integerNumOne int) int {
+	return integerNumOne 
+}
+
+func add2 (integerNumTwo int) int {
+	return integerNumTwo
+}
+
 func variables() {
-	for i := 1; i <= 10; i++ {
-		if i % 2 != 0 {
-			fmt.Println("Iteration:", i)
-		}
-	}
+	sum := add1(5) + add2(15)
+	fmt.Println(sum)
 }
