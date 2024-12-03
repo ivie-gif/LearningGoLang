@@ -110,14 +110,25 @@ import "fmt"
 
 
 // Write a function to find the maximum of two numbers.
-func max(num1, num2 int) int {
-	if num1 > num2 {
-		return num1
-	} else {
-		return num2
-	}
+// func max(num1, num2 int) int {
+// 	if num1 > num2 {
+// 		return num1
+// 	} else {
+// 		return num2
+// 	}
+// }
+// func variables() {
+// 	maxNum := max(40, 30)
+// 	fmt.Println(maxNum)
+// }
+
+
+// Create a function to print a multiplication table for numbers from 1 to 5.
+func multiTable(num1, num2, num3, num4, num5 int) int {
+	return num1 * num2 * num3 * num4 * num5
 }
+
 func variables() {
-	maxNum := max(40, 30)
-	fmt.Println(maxNum)
+	numbersTable := multiTable(1, 2, 3, 4, 5)
+	fmt.Println(numbersTable)
 }
