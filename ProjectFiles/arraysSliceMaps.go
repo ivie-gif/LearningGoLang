@@ -42,4 +42,12 @@ func arraysSliceMaps() {
 	fmt.Println("Numbers:", numb)
 
 
+	// Classwork
+	arrMovie :=[]string{"Avengers", "Spiderman", "Batman", "Superman", "Ironman"}
+	arrMovie = append(arrMovie, "Hulk", "Thor")
+	
+	MovieSlice := arrMovie[1:3]
+	
+	fmt.Println("Movies:", arrMovie)
+	fmt.Println("Slice:", MovieSlice)
 }
