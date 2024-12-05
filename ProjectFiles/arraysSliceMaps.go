@@ -30,24 +30,67 @@ import "fmt"
 // }
 
 // Learning Slice
-func arraysSliceMaps() {
-	arr :=[9]int {1,2,3,4,5,6,7,8,9}
-	slice := arr[3:8]
+// func arraysSliceMaps() {
+// 	arr :=[9]int {1,2,3,4,5,6,7,8,9}
+// 	slice := arr[3:8]
 
-	fmt.Println("Slice:", slice)
+// 	fmt.Println("Slice:", slice)
 
-	numb :=[]int{10,20,30,40,50}
-	numb = append(numb, 60, 70, 80)
+// 	numb :=[]int{10,20,30,40,50}
+// 	numb = append(numb, 60, 70, 80)
 
-	fmt.Println("Numbers:", numb)
+// 	fmt.Println("Numbers:", numb)
+
+
+// 	// Classwork
+// 	arrMovie :=[]string{"Avengers", "Spiderman", "Batman", "Superman", "Ironman"}
+// 	arrMovie = append(arrMovie, "Hulk", "Thor")
+	
+// 	MovieSlice := arrMovie[1:3]
+	
+// 	fmt.Println("Movies:", arrMovie)
+// 	fmt.Println("Slice:", MovieSlice)
+// }
+
+
+func arraysSliceMaps() { 
+	capitals := map[string] string{
+		"Nigeria": "Abuja",
+		"Ghana": "Accra",
+		"Togo": "Lome",
+		"Benin": "Cotonou",
+		"South Africa": "Cape Town",
+	}
+	capitals["Egypt"] = "Cairo"
+
+	fmt.Println("Capitals:", capitals)
+	fmt.Println("Capital of Nigeria:", capitals["Nigeria"])
+
+
+	if capital, found := capitals["Zambia"]; found {
+		fmt.Println("Capital of Zambia:", capital)
+	} else {
+		fmt.Println("Capital of Zambia not found")
+	}
 
 
 	// Classwork
-	arrMovie :=[]string{"Avengers", "Spiderman", "Batman", "Superman", "Ironman"}
-	arrMovie = append(arrMovie, "Hulk", "Thor")
+	countries := map[string]string {
+		"Canada": "Ottawa",
+		"United States": "Washington D.C",
+		"Mexico": "Mexico City",
+	}
+
+	countries["Brazil"] = "Brasilia"
 	
-	MovieSlice := arrMovie[1:3]
-	
-	fmt.Println("Movies:", arrMovie)
-	fmt.Println("Slice:", MovieSlice)
+	fmt.Println("Countries:", countries)
+
+
+	if country, exists := countries["Mexico"]; exists {
+		fmt.Println("Capital of Mexico:", country)
+	} else {
+		fmt.Println(`Capital of Mexico not found`)
+	}
+
+
 }
