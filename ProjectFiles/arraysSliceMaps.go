@@ -20,11 +20,26 @@ import "fmt"
 
 // Create an array to store your top 3 favorite books.
 // Print each book using a loop.
-func arraysSliceMaps() {
-	favouriteBooks := [3]string{"Bible", "Novels", "Magazines"}
+// func arraysSliceMaps() {
+// 	favouriteBooks := [3]string{"Bible", "Novels", "Magazines"}
 
-	for i, book := range favouriteBooks {
-		fmt.Println("Favourite Book", i+1, ":", book)
-	}
+// 	for i, book := range favouriteBooks {
+// 		fmt.Println("Favourite Book", i+1, ":", book)
+// 	}
+
+// }
+
+// Learning Slice
+func arraysSliceMaps() {
+	arr :=[9]int {1,2,3,4,5,6,7,8,9}
+	slice := arr[3:8]
+
+	fmt.Println("Slice:", slice)
+
+	numb :=[]int{10,20,30,40,50}
+	numb = append(numb, 60, 70, 80)
+
+	fmt.Println("Numbers:", numb)
+
 
 }
