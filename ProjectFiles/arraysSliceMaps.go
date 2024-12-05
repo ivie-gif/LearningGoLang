@@ -52,45 +52,64 @@ import "fmt"
 // 	fmt.Println("Slice:", MovieSlice)
 // }
 
+// Maps
+// func arraysSliceMaps() { 
+// 	capitals := map[string] string{
+// 		"Nigeria": "Abuja",
+// 		"Ghana": "Accra",
+// 		"Togo": "Lome",
+// 		"Benin": "Cotonou",
+// 		"South Africa": "Cape Town",
+// 	}
+// 	capitals["Egypt"] = "Cairo"
 
-func arraysSliceMaps() { 
-	capitals := map[string] string{
-		"Nigeria": "Abuja",
-		"Ghana": "Accra",
-		"Togo": "Lome",
-		"Benin": "Cotonou",
-		"South Africa": "Cape Town",
-	}
-	capitals["Egypt"] = "Cairo"
-
-	fmt.Println("Capitals:", capitals)
-	fmt.Println("Capital of Nigeria:", capitals["Nigeria"])
-
-
-	if capital, found := capitals["Zambia"]; found {
-		fmt.Println("Capital of Zambia:", capital)
-	} else {
-		fmt.Println("Capital of Zambia not found")
-	}
+// 	fmt.Println("Capitals:", capitals)
+// 	fmt.Println("Capital of Nigeria:", capitals["Nigeria"])
 
 
-	// Classwork
-	countries := map[string]string {
-		"Canada": "Ottawa",
-		"United States": "Washington D.C",
-		"Mexico": "Mexico City",
-	}
+// 	if capital, found := capitals["Zambia"]; found {
+// 		fmt.Println("Capital of Zambia:", capital)
+// 	} else {
+// 		fmt.Println("Capital of Zambia not found")
+// 	}
 
-	countries["Brazil"] = "Brasilia"
+
+// 	// Classwork
+// 	countries := map[string]string {
+// 		"Canada": "Ottawa",
+// 		"United States": "Washington D.C",
+// 		"Mexico": "Mexico City",
+// 	}
+
+// 	countries["Brazil"] = "Brasilia"
 	
-	fmt.Println("Countries:", countries)
+// 	fmt.Println("Countries:", countries)
 
 
-	if country, exists := countries["Mexico"]; exists {
-		fmt.Println("Capital of Mexico:", country)
-	} else {
-		fmt.Println(`Capital of Mexico not found`)
+// 	if country, exists := countries["Mexico"]; exists {
+// 		fmt.Println("Capital of Mexico:", country)
+// 	} else {
+// 		fmt.Println(`Capital of Mexico not found`)
+// 	}
+// }
+
+
+// Combining Arrays, Slices, and Maps
+func  arraysSliceMaps() {
+	students := []map[string]string {
+		{"name": "John", "age": "25", "grade": "A"},
+		{"name": "Alice", "age": "22", "grade": "B"},
+		{"name": "Bob", "age": "28", "grade": "C"},
 	}
 
+	for _, student := range students {
+		// fmt.Println("Name:", student["name"])
+		// fmt.Println("Age:", student["age"])
+		// fmt.Println("Grade:", student["grade"])
+		// fmt.Println()
 
+		// fmt.Println("Student Data:", i+1, student)
+
+		fmt.Println("Name:", student["name"], "| Age:", student["age"], "| Grade:", student["grade"])
+    }
 }
