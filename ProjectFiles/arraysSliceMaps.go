@@ -130,27 +130,6 @@ func arraysSliceMaps() {
 		characterCount[char]++
 	}
 	fmt.Println("Character Count:", characterCount)
-	// Use a slice to store the names of your friends.
-
-
-
-    // tasks := []string{}
-    // scanner := bufio.NewScanner(os.Stdin)
-
-    // fmt.Println("Enter your tasks (type 'done' to finish):")
-    // for scanner.Scan() {
-    //     task := scanner.Text()
-    //     if task == "done" {
-    //         break
-    //     }
-    //     tasks = append(tasks, task)
-    // }
-
-    // fmt.Println("\nYour tasks:")
-    // for i, task := range tasks {
-    //     fmt.Printf("%d. %s\n", i+1, task)
-    // }
-
 
 // Classwork
 	// Create a program that allows a user to input a list of tasks and stores them in a slice.
