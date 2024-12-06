@@ -11,5 +11,6 @@ fmt.Println("Today is : ", time.Now())
 
 runExamples()
 variables()
-arraysSliceMaps()
+// arraysSliceMaps()
+structMain()
 }

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
+	// "bufio"
+	// "fmt"
 	// "go/scanner"
-	"os"
+	// "os"
 )
 
 // func arraysSliceMaps() {
@@ -114,40 +114,40 @@ import (
 // }
 
 
-func arraysSliceMaps() {
-	elements := [5]int{10, 30, 25, 50, 40}
-	sum := (elements[0] + elements[1] + elements[2] + elements[3] + elements[4])
+// func arraysSliceMaps() {
+// 	elements := [5]int{10, 30, 25, 50, 40}
+// 	sum := (elements[0] + elements[1] + elements[2] + elements[3] + elements[4])
 
 
 
-	fmt.Println("Elements:", elements)
-	fmt.Println("Elements:", sum)
+// 	fmt.Println("Elements:", elements)
+// 	fmt.Println("Elements:", sum)
 
-	// Use a map to count the occurrence of each character in a string.
-	text := "Hello, World!"
-	characterCount := make(map[rune]int)
-	for _, char := range text {
-		characterCount[char]++
-	}
-	fmt.Println("Character Count:", characterCount)
+// 	// Use a map to count the occurrence of each character in a string.
+// 	text := "Hello, World!"
+// 	characterCount := make(map[rune]int)
+// 	for _, char := range text {
+// 		characterCount[char]++
+// 	}
+// 	fmt.Println("Character Count:", characterCount)
 
-// Classwork
-	// Create a program that allows a user to input a list of tasks and stores them in a slice.
-	tasks := []string{"Buy groceries", "Finish homework", "Go to the gym", "Call Babe", "Read a book"}
+// // Classwork
+// 	// Create a program that allows a user to input a list of tasks and stores them in a slice.
+// 	tasks := []string{"Buy groceries", "Finish homework", "Go to the gym", "Call Babe", "Read a book"}
 
-	// To allow users to type in tasks and store them in a slice
-	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Println("Enter your tasks (type 'done' to finish):")
-	for scanner.Scan() {
-		task := scanner.Text()
-		if task == "done" {
-			break
-		}
-		tasks = append(tasks, task)
-	}
-	fmt.Println("\nYour tasks:")
-	for _, task := range tasks {
-		fmt.Println("Task:", task)
-	}
-}
+// 	// To allow users to type in tasks and store them in a slice
+// 	scanner := bufio.NewScanner(os.Stdin)
+// 	fmt.Println("Enter your tasks (type 'done' to finish):")
+// 	for scanner.Scan() {
+// 		task := scanner.Text()
+// 		if task == "done" {
+// 			break
+// 		}
+// 		tasks = append(tasks, task)
+// 	}
+// 	fmt.Println("\nYour tasks:")
+// 	for _, task := range tasks {
+// 		fmt.Println("Task:", task)
+// 	}
+// }
 	
